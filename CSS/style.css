@@ -12,14 +12,13 @@ html {
 
 body {
     font-size: 0px;
-    font-family: 'Jurassic Park', sans-serif;
     background-color: #000;
     color: #fff;
 }
 
 /* --- ENCABEZADO Y HERO --- */
 header {
-    background: url(../Imagenes/preview.jpg) no-repeat center center;
+    background: url(../IMAGENES/preview.jpg) no-repeat center center;
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -236,7 +235,6 @@ nav a:hover {
 }
 
 .form-contacto button {
-    font-family: 'Jurassic Park', sans-serif;
     font-size: 2.2rem;
     background-color: rgb(94, 0, 148);
     color: #fff;
