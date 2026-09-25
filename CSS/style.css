@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: 0px;
+    font-family: 'Jurassic Park', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* --- ENCABEZADO Y HERO --- */
+header {
+    background: url(../Imagenes/preview.jpg) no-repeat center center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido {
+    min-width: 320px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+}
+
+header h1 {
+    font-size: 6rem;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    text-shadow: 0px 0px 10px #000;
+    text-align: center;
+}
+
+header span {
+    font-size: 3.5rem;
+    color: #a3fff3;
+    text-shadow: 0px 0px 10px #000;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* --- NAVEGACIÓN --- */
+nav {
+    background-color: rgba(0, 0, 0, 0.85);
+    min-height: 13vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    flex: 1;
+    min-width: 140px;
+    font-size: 2.2rem;
+    color: crimson;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 13vh;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #000;
+    background-color: rgb(95, 63, 110);
+}
+
+/* --- SECCIÓN SOBRE MÍ / DESCRIPCIÓN --- */
+#sobre-mi, #descripcion {
+    padding: 70px 20px;
+    background: radial-gradient(circle, rgb(126, 53, 175), #000);
+}
+
+#sobre-mi h1, #descripcion h1, section h2 {
+    font-size: 4rem;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(255, 0, 76, 0.5);
+}
+
+#describir {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#describir img {
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    border-radius: 100%;
+    border: 5px solid black;
+    object-fit: cover;
+    box-shadow: 0px 0px 20px #000;
+}
+
+#describir figcaption {
+    width: 45%;
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 2.2rem;
+    text-shadow: 1px 1px 5px #000;
+    min-width: 280px;
+}
+
+#especies {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(151, 57, 123);
+}
+
+#especies h3 {
+    font-size: 2.5rem;
+    color: rgb(196, 11, 212);
+    margin-bottom: 10px;
+}
+
+#especies p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* --- SECCIÓN ACADÉMICO --- */
+#academico {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #000 0%, #1a0000 100%);
+    border-top: 2px solid rgb(220, 20, 210);
+}
+
+#academico h2 {
+    color: crimson;
+}
+
+.tarjeta-info {
+    width: 85%;
+    margin: 20px auto;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 25px;
+    border-left: 6px solid rgb(174, 0, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.tarjeta-info h3 {
+    font-size: 2.5rem;
+    color: rgb(0, 255, 255);
+}
+
+.tarjeta-info p {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-top: 8px;
+    line-height: 1.8rem;
+}
+
+.tarjeta-info em {
+    color: rgb(255, 0, 255);
+    font-size: 1.3rem;
+}
+
+/* --- SECCIÓN CONTACTO --- */
+#contacto {
+    padding: 60px 20px;
+    background: #000;
+    border-top: 2px solid rgb(220, 20, 143);
+}
+
+#contacto h2 {
+    color: rgb(180, 20, 220);
+}
+
+.form-contacto {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(98, 0, 255);
+}
+
+.form-contacto label {
+    font-size: 1.8rem;
+    color: rgb(0, 255, 242);
+}
+
+.form-contacto input, 
+.form-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    border: 1px solid rgb(220, 20, 143);
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-contacto input:focus, 
+.form-contacto textarea:focus {
+    outline: none;
+    border-color: rgb(255, 0, 242);
+    box-shadow: 0 0 8px rgb(166, 101, 226);
+}
+
+.form-contacto button {
+    font-family: 'Jurassic Park', sans-serif;
+    font-size: 2.2rem;
+    background-color: rgb(94, 0, 148);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*transition: background 0.3s ease;*/
+    margin-top: 10px;
+}
+
+.form-contacto button:hover {
+    background-color: rgb(247, 0, 255);
+    color: #000;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: #050505;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    font-size: 1.8rem;
+    color: rgb(255, 0, 106);
+    margin: 5px 0;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aarón Cárdenas">
+    <meta name="description" content="Portafolio personal de evidencias. Proyectos y trayectoria académica.">
+    <meta name="keywords" content="Portafolio, Desarrollador, HTML5, CSS3, Proyectos, Curriculum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portafolio Personal</title>
+</head>
+<body>
+
+    <!-- Encabezado con Logo y Nav -->
+    <header class="contenido">
+        <section id="logo">
+            <h1>PORTAFOLIO</h1>
+            <span>Desarrollo & Evidencias</span>
+        </section>
+        <nav>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#academico">Académico</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección: Datos Personales / Sobre Mí -->
+        <section id="sobre-mi" class="contenido">
+            <h1>¿Quién soy?</h1>
+            <figure id="describir">
+                <img src="Imagenes/perfil.png" alt="Fotografía de perfil de [Tu Nombre]">
+                <figcaption>
+                    Hola, soy <strong>Aarón Cárdenas</strong>. Alguien a quien le a gustado la tecnologia desde pequeño 
+                    gracias a los videojuegos y que me han ayudado a disfrutar lo que hago
+                </figcaption>
+            </figure>
+
+            <article id="especies">
+                <div>
+                    <h3>Datos Personales</h3>
+                    <p>Ubicación: México | Idiomas: Español, Inglés | Especialidad: Desarrollo Web</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección: Formación Académica -->
+        <section id="academico" class="contenido">
+            <h2>Formación Académica</h2>
+            <article class="tarjeta-info">
+                <h3>Ingeniería / Licenciatura en Tecnología</h3>
+                <p><em>Institución Educativa — 2022 - Presente</em></p>
+                <p>Enfoque en desarrollo de software, maquetación web semántica y diseño de interfaces.</p>
+            </article>
+        </section>
+
+        <!-- Sección: Formulario de Contacto -->
+        <section id="contacto" class="contenido">
+            <h2>Contacto</h2>
+            <form action="#" method="POST" class="form-contacto">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="contenido">
+        <p>&copy; 2026 Aarón Cárdenas. Todos los derechos reservados.</p>
+        <p>🌐 GitHub | 💼 LinkedIn | ✉️ Contacto</p>
+    </footer>
+
+</body>
+</html>
